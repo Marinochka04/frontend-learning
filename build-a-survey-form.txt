@@ -1,0 +1,60 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Here you can put your answers!</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:<input type="text" id="name" placeholder="Name:" required /></label>
+      <label for="email" id="email-label">Email:<input type="email" id="email" placeholder="Email:" required /></label>
+      <label for="number" id="number-label">Number:<input type="number" id="number" placeholder="Number:" min="0" max="10000000" /></label>
+      <label>Your pet:
+        <select id="dropdown">
+          <option>(choose one)</option>
+          <option>cat</option>
+          <option>dog</option>
+        </select>
+      </label>
+      <legend>sex(required)</legend>
+      <label>girl<input type="radio" name="sex" id="girl" value="girl" /></label>
+      <label>boy<input type="radio" name="sex" id="boy" value="boy" /></label>
+      <legend>you and your pet</legend>
+      <label for="sleep">sleep together<input type="checkbox" id="sleep" value="sleep" /></label>
+      <label for="eat">eat together<input type="checkbox" id="eat" value="eat" /></label>
+      <label for="play">play together<input type="checkbox" id="play" value="play" /></label>
+      <label for="smth"><textarea rows="3" cols="30" placeholder="smth about your pet" id="smth"></textarea></label>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+h1, p {
+  text-align: center;
+  margin: 1em auto;
+}
+
+body {
+  background-color: rgb(241, 236, 252);
+  color: rgb(41, 24, 64);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+** end of styles.css **
+
