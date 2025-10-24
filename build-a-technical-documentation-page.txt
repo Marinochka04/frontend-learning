@@ -1,0 +1,91 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>Hmmm...Painting</header>
+        <a class="nav-link" href="#My_Paintings">My Paintings</a>
+        <a class="nav-link" href="#Village_Painting">Village Painting</a>
+        <a class="nav-link" href="#Cat_Painting">Cat Painting</a>
+        <a class="nav-link" href="#Mom_Painting">Mom Painting</a>
+        <a class="nav-link" href="#Landscape_Painting">Landscape Painting</a>
+      </nav>
+      <section class="main-section" id="My_Paintings">
+        <header>My Paintings</header>
+        <p>I really love drawing. I've learning for it in a special school.</p>
+        <code>Smth about programming...</code>
+        <p>I have a lot of paintings. I'll tell about them in further chapters.</p>
+        <label>My favorite things for painting
+          <ol>
+            <li>Landscapes</li>
+            <li>Animals</li>
+            <li>Mother</li>
+            <li>Clouds</li>
+            <li>Flowers</li>
+            <li>Houses</li>
+          </ol>
+        </label>
+      </section>
+      <section class="main-section" id="Village_Painting">
+        <header>Village Painting</header>
+        <p>Here I'll tell you about Village sceneries. Rarely but I drow my favourite Village.</p>
+        <code>Smth about programming...Smth about programming...</code>
+        <p>I have approximately 8 paintings from village.</p>
+        <code>Smth about programming more...</code>
+      </section>
+      <section class="main-section" id="Cat_Painting">
+        <header>Cat Painting</header>
+        <p>I like to draw my cats too. But I haven't finished my work yet.</p>
+        <p>I would like to do more drawings of my cats in the future.</p>
+        <code>Smth about programming....</code>
+      </section>
+      <section class="main-section" id="Mom_Painting">
+        <header>Mom Painting</header>
+        <p>I also have drawn my mom's portrait for one competition.</p>
+        <code>...Smth about programming...</code>
+        <p>That time I have take the second place.</p>
+      </section>
+      <section class="main-section" id="Landscape_Painting">
+        <header>Landscape Painting</header>
+        <p>But my favourite one is landscapes. I love clouds and forests and so on...</p>
+        <p>And you! Do you like painting?</p>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+.main-section {
+  margin-left: 200px;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgb(222, 232, 247);
+}
+
+.nav-link {
+  display: block;
+}
+
+** end of styles.css **
+
