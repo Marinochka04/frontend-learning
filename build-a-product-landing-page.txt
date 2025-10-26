@@ -1,0 +1,58 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://cdn.culture.ru/images/da61c066-2c3f-5b90-bb67-9cf2079e0787">
+      <nav id="nav-bar">
+        <a class="nav-link" href="#video">first section</a>
+        <a class="nav-link" href="#email">second section</a>
+        <a class="nav-link" href="#submit">third section</a>
+</nav>
+    </header>
+    <main>
+      <video id="video">
+        <source src="https://yandex.ru/video/preview/11648245294177457425?text=рисунок%20пейзаж%20uefim%20video&path=yandex_search&parent-reqid=1761485592885282-576233784249349437-balancer-l7leveler-kubr-yp-sas-256-BAL&from_type=vast" type="video/mp4">
+      </video>
+      <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="Your email..." />
+        <input id="submit" type="submit"  />
+      </form>
+      <p>This page is about painting</p>
+    </main>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+}
+
+img {
+  left: 3px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+p {
+  display: flex;
+}
+
+
+
+** end of styles.css **
+
