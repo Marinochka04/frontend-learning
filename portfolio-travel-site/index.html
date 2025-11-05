@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scalw=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>TravelEase - Путешествия, которые запоминаются.</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">TravelEase</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#tours">Туры</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <h1>Путешествия, которые запоминаются</h1>
+                <p>Выбирайте маршрут - мы позаботимся о деталях.</p>
+                <a href="#tours" class="btn btn-primary">Посмотреть туры</a>
+            </section>
+
+            <!-- Filter Section -->
+            <section class="filter-section">
+                <h2>Выберите категорию</h2>
+                <div class="filter-buttons">
+                    <label><input type="radio" name="category" value="all" />Все</label>
+                    <label><input type="radio" name="category" value="mountains" />Горы</label>
+                    <label><input type="radio" name="category" value="sea" />Море</label>
+                    <label><input type="radio" name="category" value="forest" />Лес</label>
+                    <label><input type="radio" name="category" value="city" />Город</label>
+                </div>
+            </section>
+
+            <!-- Tours Grid -->
+            <section id="tours" class="tours-grid">
+                <!-- Mountains1 -->
+                <div class="tour-card" data-category="mountains">
+                    <img src="" alt="Восхождение на Эльбрус">
+                    <div class="tour-info">
+                        <h3>Восхождение на Эльбрус</h3>
+                        <p>Протяженность маршрута: 10 дней</p>
+                        <p>Сложность: Высокая</p>
+                        <p>Цена: от 45 000 ₽</p>
+                        <a href="#" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Sea1 -->
+                <div class="tour-card" data-category="sea">
+                    <img src="" alt="Отдых на Мальдивах">
+                    <div class="tour-info">
+                        <h3>Отдых на Мальдивах</h3>
+                        <p>Протяженность: 7 дней</p>
+                        <p>Сложность: Легкая</p>
+                        <p>Цена: от 85 000 ₽</p>
+                        <a href="#" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Forest -->
+                <div class="tour-card" data-category="forest">
+                    <img src="" alt="Поход по Уралу">
+                    <div class="tour-info">
+                        <h3>Поход по Уралу</h3>
+                        <p>Протяженность: 5 дней</p>
+                        <p>Сложность: Средняя</p>
+                        <p>Цена: от 25 000 ₽</p>
+                        <a href="#" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- City -->
+                <div class="tour-card" data-category="city">
+                    <img src="" alt="Городской тур по Парижу">
+                    <div class="tour-info">
+                        <h3>Городской тур по Парижу</h3>
+                        <p>Протяженность: 4 дня</p>
+                        <p>Сложность: Легкая</p>
+                        <p>Цена: от 35 000 ₽</p>
+                        <a href="#" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Mountains2 -->
+                <div class="tour-card" data-category="mountains">
+                    <img src="" alt="Путешествие по Алтаю">
+                    <div class="tour-info">
+                        <h3>Путешествие по Алтаю</h3>
+                        <p>Протяженность маршрута: 8 дней</p>
+                        <p>Сложность: Средняя</p>
+                        <p>Цена: от 38 000 ₽</p>
+                        <a href="#" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Sea2 -->
+                <div class="tour-card" data-category="sea">
+                    <img src="" alt="Отдых на Бали">
+                    <div class="tour-info">
+                        <h3>Отдых на Бали</h3>
+                        <p>Протяженность: 10 дней</p>
+                        <p>Сложность: Легкая</p>
+                        <p>Цена: от 65 000 ₽</p>
+                        <a href="#" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about-section">
+                <h2>Почему выбирают нас?</h2>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <h3>Личный подход</h3>
+                        <p>Каждый маршрут создается с учетом ваших пожеланий.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Безопасность</h3>
+                        <p>Все туры проходят под контролем опытных гидов.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Доступные цены</h3>
+                        <p>Мы напрямую с партнерами - без лишних наценок.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <h2>Свяжитесь с нами</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required />
+                    <input type="email" placeholder="Email" required />
+                    <textarea placeholder="Сообщение" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 TravelEase. Все права защищены.</p>
+        </footer>
+    </body>
+</html>
