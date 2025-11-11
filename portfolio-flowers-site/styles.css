@@ -5,7 +5,6 @@
   --forth-color: #7a948b;
   --text-color1: #fff;
   --text-color2: #333;
-
 }
 
 * {
@@ -214,6 +213,65 @@ body {
     font-family: serif;
 }
 
+.mission {
+    padding: 0;
+    background-color: var(--first-color);
+    display: flex;
+    align-items: center;
+    height: 70vh;
+}
+
+.mission .container {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    height: 100%;
+    max-width: 1200px;
+}
+
+.mission-content {
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.mission-content h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--text-color2);
+}
+
+.mission-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.signature {
+    margin-top: 20px;
+    text-align: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mission-image {
+    flex: 1;
+    position: relative;
+}
+
+.mission-image img {
+    width: 160%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
 @media (max-width: 768px) {
     .header .container {
         flex-direction: column;
@@ -254,5 +312,26 @@ body {
 
     .feature-card p {
         font-size: 0.9rem;
+    }
+
+    .mission .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mission-content {
+        padding: 30px;
+    }
+
+    .mission-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .mission-content p {
+        font-size: 1rem;
+    }
+
+    .signature {
+        font-size: 1.2rem;
     }
 }
