@@ -17,7 +17,6 @@
                             <li><a href="#catalog">Онлайн витрина</a></li>
                             <li><a href="#events">Мероприятия</a></li>
                             <li><a href="#contacts">Контакты</a></li>
-                            <li><a href="#delivery">Доставка</a></li>
                         </ul>
                     </nav>
                     <div class="header-icons">
@@ -37,7 +36,7 @@
         </div>
         <main>            
             <!-- We have Section -->
-            <section class="features">
+            <section class="features" id="about">
                 <div class="container">
                     <h2>У нас есть</h2>
                     <div class="features-grid">
@@ -66,13 +65,13 @@
                         <p class="signature">с любовью<br>Florbaza</p>
                     </div>
                     <div class="mission-image">
-                        <img src="images/flowers4.jpg" alt="Цветы на столе">
+                        <img src="images/mission.jpg" alt="Цветы на столе">
                     </div>
                 </div>
             </section>
 
             <!-- Online catalog section -->
-            <section class="catalog">
+            <section class="catalog" id="catalog">
                 <div class="container">
                     <h2>Онлайн витрина</h2>
                     <div class="carousel">
@@ -84,18 +83,18 @@
                                 <p>10 600 ₽</p>
                             </div>
                             <div class="carousel-item">
-                                <img src="images/bouquet3.jpg" alt="Букет">
-                                <p>Букет белых ранункулюсов будет упакован в дизайнерскую пленку.</p>
+                                <img src="images/bouquet2.jpg" alt="Букет">
+                                <p>Яркий акцентный букет будет упакован в дизайнерскую пленку.</p>
                                 <p>9 450 ₽</p>
                             </div>
                             <div class="carousel-item">
                                 <img src="images/bouquet6.jpg" alt="Букет">
-                                <p>Нежный букет с розовыми ранункулюсами, сиреневыми дельфиниумами, пионами и тюльпанами.</p>
+                                <p>Нежный букет с розовыми ранункулюсами, сиреневыми дельфиниумами и пионами.</p>
                                 <p>12 900 ₽</p>
                             </div>
                             <div class="carousel-item">
                                 <img src="images/bouquet5.jpg" alt="Букет">
-                                <p>Изысканный букет из нежно-розовых роз, белоснежных пионов и утончённых фиолетовых цветов, дополненный воздушной зеленью.</p>
+                                <p>Изысканный букет из нежно-розовых роз, белоснежных пионов.</p>
                                 <p>11 500 ₽</p>
                             </div>
                         </div>
@@ -105,7 +104,7 @@
             </section>
 
             <!-- Events Section -->
-            <section class="events">
+            <section class="events" id="events">
                 <div class="container">
                     <h2>МЕРОПРИЯТИЯ</h2>
                     <p>В нашем пространстве регулярно проходят мастер классы по созданию композиций из свежих и сухих цветов, а также чаепития и лекции о красоте.</p>
@@ -160,7 +159,7 @@
                 <div class="footer-map">
                     <img src="images/map.png" alt="Карта">
                 </div>
-                <div class="footer-contact">
+                <div class="footer-contact" id="contacts">
                     <p class="signature">с любовью<br>FLORBaza</p>
                     <div class="contact-info">
                         <div><span><img src="icons/phone-icon.webp" alt="Телефон" class="icon"></span> +7 (123) 456-78-90</div>
@@ -176,5 +175,28 @@
                 </div>
             </div>
         </footer>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carouselInner = document.querySelector('.carousel-inner');
+            const prevBtn = document.querySelector('.carousel-btn.prev');
+            const nextBtn = document.querySelector('.carousel-btn.next');
+
+            const itemWidth = document.querySelector('.carousel-item').offsetWidth + 20; // 20 — это gap
+
+            prevBtn.addEventListener('click', () => {
+                carouselInner.scrollBy({
+                    left: -itemWidth,
+                    behavior: 'smooth'
+                });
+            });
+
+            nextBtn.addEventListener('click', () => {
+                carouselInner.scrollBy({
+                    left: itemWidth,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        </script>
     </body>
 </html>
