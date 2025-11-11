@@ -361,6 +361,139 @@ body {
     align-self: center;
 }
 
+.events {
+    background-color: var(--text-color1);
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.events-bg {
+    background: url('images/events-bouquet6.jpg') center/cover no-repeat;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.events-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.events-bg .container {
+    position: relative;
+    z-index: 2;
+    color: var(--text-color1);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.events-bg h2 {
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
+.events-bg p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.event-card {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: var(--first-color);
+    padding: 40px 60px;
+    box-sizing: border-box;
+    gap: 40px;
+}
+
+.event-card img {
+    width: 24%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.event-info {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.event-info .date {
+    font-size: 1rem;
+    color: var(--text-color2);
+}
+
+.event-info h3 {
+    font-size: 1.5rem;
+    color: var(--text-color2);
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+.event-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-color2);
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.event-info .price {
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--text-color2);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) and (min-width: 769px) {
+    .event-card {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px 40px;
+    }
+
+    .event-card img {
+        width: 40%;
+        min-width: 300px;
+        height: auto;
+    }
+
+    .event-info {
+        width: 50%;
+        max-width: 500px;
+        padding: 10px 15px;
+    }
+}
+
 @media (max-width: 768px) {
     .header .container {
         flex-direction: column;
@@ -422,6 +555,28 @@ body {
 
     .signature {
         font-size: 1.2rem;
+    }
+
+    .event-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .event-card img {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .event-info {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+
+    .event-info .price,
+    .event-info .btn {
+        align-self: center;
     }
 }
 
