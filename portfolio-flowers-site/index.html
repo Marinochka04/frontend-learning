@@ -183,7 +183,7 @@
             const prevBtn = document.querySelector('.carousel-btn.prev');
             const nextBtn = document.querySelector('.carousel-btn.next');
 
-            const itemWidth = document.querySelector('.carousel-item').offsetWidth + 20; // 20 — это gap
+            const itemWidth = document.querySelector('.carousel-item').offsetWidth + 20;
 
             prevBtn.addEventListener('click', () => {
                 carouselInner.scrollBy({
@@ -198,6 +198,31 @@
                     behavior: 'smooth'
                 });
             });
+        });
+        </script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const clientsList = document.querySelector('.clients-list');
+            const prevClientsBtn = document.querySelector('.slider-btn.prev');
+            const nextClientsBtn = document.querySelector('.slider-btn.next');
+
+            if (clientsList && prevClientsBtn && nextClientsBtn) {
+                const cardWidth = document.querySelector('.client-card').offsetWidth + 30;
+
+                prevClientsBtn.addEventListener('click', () => {
+                    clientsList.scrollBy({
+                        left: -cardWidth,
+                        behavior: 'smooth'
+                    });
+                });
+
+                nextClientsBtn.addEventListener('click', () => {
+                    clientsList.scrollBy({
+                        left: cardWidth,
+                        behavior: 'smooth'
+                    });
+                });
+            }
         });
         </script>
     </body>
