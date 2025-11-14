@@ -11,7 +11,12 @@
             <header class="header">
                 <div class="header-container">
                     <div class="logo">FLORbaza</div>
-                    <nav class="nav">
+                    <div class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="nav" id="nav">
                         <ul>
                             <li><a href="#about">О нас</a></li>
                             <li><a href="#catalog">Онлайн витрина</a></li>
@@ -29,8 +34,8 @@
             <section class="hero">
                 <div class="container">
                     <h1>Мы не просто создаем букеты — мы создаем эмоции</h1>
-                    <p>Воплотим в жизнь самые изысканные и непредсказуемые <br> флористические идеи.Также в нашей онлайн витрине <br> всегда более 30 вариантов готовых букетов и композиций.</p>
-                    <button class="btn">ОНЛАЙН ВИТРИНА</button>
+                    <p>Воплотим в жизнь самые изысканные и непредсказуемые <br> флористические идеи. Также в нашей онлайн витрине <br> всегда более 30 вариантов готовых букетов и композиций.</p>
+                    <button class="btn" onclick="location.href='#catalog'">Онлайн витрина</button>
                 </div>
             </section>
         </div>
@@ -62,7 +67,7 @@
                     <div class="mission-content">
                         <h2>Наша миссия</h2>
                         <p class="mission-text">Помогать делать людей<br>счастливыми, моменты<br>радостными, а жизнь удобной.</p>
-                        <p class="signature">с любовью<br>Florbaza</p>
+                        <p class="signature">с любовью<br>florbaza</p>
                     </div>
                     <div class="mission-image">
                         <img src="images/mission.jpg" alt="Цветы на столе">
@@ -118,7 +123,7 @@
                         <h3>Создание весеннего букета из живых цветов</h3>
                         <p>На мастер классе вас ждет творческая и теплая атмосфера, создание цветочной композиции, собранной своими руками.</p>
                         <span class="price">5000 ₽</span>
-                        <button class="btn">Записаться</button>
+                        <button class="btn" onclick="location.href='#contacts'">Записаться</button>
                     </div>
                 </div>
             </section>
@@ -162,12 +167,21 @@
             </div>
             <div class="footer-content">
                 <div class="footer-left">
-                    <p class="signature">с любовью<br>FLORBaza</p>
+                    <p class="signature">с любовью<br>florbaza</p>
                 </div>
                 <div class="footer-right contact-info">
-                    <div><span><img src="icons/phone.svg" alt="Телефон" class="icon"></span> +7 (123) 456-78-90</div>
-                    <div><span><img src="icons/mail.svg" alt="Почта" class="icon"></span> Florbaza@mail.com</div>
-                    <div><span><img src="icons/location.svg" alt="Адрес" class="icon"></span> Мы находимся по адресу: ул. Слободы, 1, Москва, Этаж 1</div>
+                    <div class="contact-item">
+                        <img src="icons/phone.svg" alt="Телефон" class="icon">
+                        <span>+7 (123) 456-78-90</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="icons/mail.svg" alt="Почта" class="icon">
+                        <span> Florbaza@mail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="icons/location.svg" alt="Адрес" class="icon">
+                        <span>ул. Слободы, 1, Москва, Этаж 1</span>
+                    </div>
                 </div>
             </div>
             <div class="footer-social">
@@ -179,6 +193,17 @@
                 </div>
             </div>
         </footer>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.getElementById('burger');
+            const nav = document.getElementById('nav');
+
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('active');
+                nav.classList.toggle('open');
+            });
+        });
+        </script>
         <script>
         document.addEventListener('DOMContentLoaded', function () {
             const carouselInner = document.querySelector('.carousel-inner');
