@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+:root {
+  --color1: #0f1e0f;
+  --color2: #96a4a5;
+  --color3: #96a4a550;
+  --color4: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;

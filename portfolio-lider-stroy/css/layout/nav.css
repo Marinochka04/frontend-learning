@@ -1,0 +1,16 @@
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-list a {
+    color: #2d3644;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.nav-list a:hover {
+    color: #96a4a5;
+}
