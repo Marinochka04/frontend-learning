@@ -1,0 +1,58 @@
+@import url('./base.css');
+
+.stats-section {
+    background-color: var(--color3);
+    padding: 60x 0;
+    margin: 40px 0;
+}
+
+.stats-container {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.stats-left {
+    flex: 0 1 40%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--color4);
+    border-radius: 10px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 15px;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    color: var(--color2);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.stat-card p {
+    font-size: 1.2rem;
+    color: var(--color2);
+    margin: 0;
+}
+
+.stats-right {
+    flex: 0 1 60%;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}

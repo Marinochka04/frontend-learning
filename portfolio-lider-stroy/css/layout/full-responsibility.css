@@ -1,5 +1,7 @@
+@import url('./base.css');
+
 .full-responsibility {
-    background-color: #96a4a550;
+    background-color: var(--color3);
     padding: 60px 0;
     margin: 40px 0;
 }
@@ -14,6 +16,7 @@
     display: flex;
     gap: 10px;
     width: 100%;
+    padding: 10px 40px;
 }
 
 .full-resp-image {
@@ -44,14 +47,15 @@
 
 .full-resp-content h2 {
     font-size: 2rem;
-    color: #0f1e0f;
+    color: var(--color2);
     margin-bottom: 15px;
     font-weight: 700;
     line-height: 1.2;
+    text-transform: uppercase;
 }
 
 .full-resp-content p {
-    color: #2d3644;
+    color: var(--color2);
     margin: 0;
     font-size: 1.2rem;
     line-height: 1.5;
@@ -60,15 +64,16 @@
 .full-resp-features {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 0;
+    padding: 0 40px;
 }
 
 .feature-btn {
-    padding: 10px 15px;
-    background-color: #abc79f;
-    color: #2d3644;
+    padding: 20px 60px;
+    background-color: var(--color2);
+    color: var(--color4);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -78,10 +83,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
 }
 
 .feature-btn:hover {
-    background-color: #2d3644;
-    color: white;
+    background-color: var(--color3);
+    color: var(--color1);
 }
