@@ -1,15 +1,14 @@
 @import url('./base.css');
 
 .full-responsibility {
-    background-color: var(--color3);
     padding: 60px 0;
-    margin: 40px 0;
+    margin: 0;
 }
 
 .full-resp-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 
 .full-resp-top {
