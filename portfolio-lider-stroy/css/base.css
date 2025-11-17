@@ -6,7 +6,7 @@
 }
 
 :root {
-  --color1: #0f1e0f;
+  --color1: #607496;
   --color2: #2d3644;
   --color3: #96a4a550;
   --color4: #fff;
@@ -21,8 +21,8 @@
 html, body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #2d3644;
-    background-color: white;
+    color: var(--color2);
+    background-color: var(--color4);
 }
 
 .container {
