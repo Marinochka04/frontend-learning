@@ -122,6 +122,10 @@
         font-size: 1.2rem;
     }
 
+    .timeline-card-white {
+        height: 100px;
+    }
+
     .timeline-card-white h3 {
         font-size: 1.8rem;
     }
