@@ -10,6 +10,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../fonts/Inter-Bold.otf') format('opentype');
+    font-style: normal;
+}
+
+
 :root {
   --color1: #72706c;
   --color2: #21242d;
@@ -33,13 +40,4 @@ body {
 .container {
     margin: 0;
     padding: 0 20px;
-}
-
-h1 {
-    font-size: 2rem;
-    color: #2d3644;
-    margin: 0 50px 15px 50px;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1.2;
 }
