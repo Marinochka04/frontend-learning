@@ -36,6 +36,7 @@
     display: flex;
     gap: 10px;
     z-index: 10;
+    align-items: flex-end;
 }
 
 .timeline-card {
@@ -45,12 +46,14 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    min-width: 150px;
+    width: 350px;
+    box-sizing: border-box;
 }
 
 .timeline-card-blue {
     background-color: var(--color2);
     color: var(--color4);
+    height: 200px;
 }
 
 .timeline-card-blue h3 {
@@ -62,13 +65,14 @@
 }
 
 .timeline-card-blue p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 0;
 }
 
 .timeline-card-white {
     background-color: var(--color4);
     color: var(--color2);
+    height: 120px;
 }
 
 .timeline-card-white h3 {
@@ -80,6 +84,6 @@
 }
 
 .timeline-card-white p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin: 0;
 }
