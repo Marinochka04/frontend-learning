@@ -40,3 +40,21 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+@media (max-width: 1100px) and (min-width: 769px) {
+    .header {
+        padding: 20px 40px;
+    }
+
+    .header-container {
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .nav-list a {
+        font-size: 1.1rem;
+    }
+}
