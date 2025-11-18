@@ -87,3 +87,46 @@
     font-size: 1.4rem;
     margin: 0;
 }
+
+@media (max-width: 1100px) and (min-width: 769px) {
+    .timeline-section {
+        padding: 15px 0;
+        margin: 30px 0;
+    }
+
+    .timeline-img-wrapper {
+        height: 70vh;
+        padding: 0 30px;
+    }
+
+    .timeline-cards-overlay {
+        bottom: 10px;
+        left: 40px;
+        gap: 10px;
+    }
+
+    .timeline-card {
+        padding: 15px;
+        width: 280px;
+    }
+
+    .timeline-card-blue {
+        height: 150px;
+    }
+
+    .timeline-card-blue h3 {
+        font-size: 1.8rem;
+    }
+
+    .timeline-card-blue p {
+        font-size: 1.2rem;
+    }
+
+    .timeline-card-white h3 {
+        font-size: 1.8rem;
+    }
+
+    .timeline-card-white p {
+        font-size: 1.2rem;
+    }
+}
