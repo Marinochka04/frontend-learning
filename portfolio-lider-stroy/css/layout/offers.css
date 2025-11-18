@@ -12,6 +12,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    overflow: hidden;
 }
 
 .offers-container h2 {
@@ -28,6 +29,7 @@
     gap: 10px;
     width: 100%;
     align-items: stretch;
+    overflow: hidden;
 }
 
 .offers-text {
@@ -71,7 +73,11 @@
     overflow-x: auto;
     padding: 10px 0;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+ .offers-carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .offer-card {
@@ -116,4 +122,65 @@
 
 .nav-btn:hover {
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 1100px) and (min-width: 769px) {
+    .offers-section {
+        padding: 50px 0;
+    }
+
+    .offers-container {
+        gap: 10px;
+    }
+
+    .offers-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .offers-top {
+        gap: 10px;
+    }
+
+    .offers-text {
+        flex: 0 1 40%;
+        min-width: 180px;
+        padding: 15px;
+    }
+
+    .offers-text p {
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+
+    .btn-all-offers {
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+
+    .offers-carousel {
+        flex: 0 1 60%;
+        min-width: 250px;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .offer-card {
+        padding: 10px;
+        width: 180px;
+    }
+
+    .offer-card img {
+        height: 130px;
+        margin-bottom: 10px;
+    }
+
+    .offer-card p {
+        font-size: 1.2rem;
+    }
+
+    .offers-navigation {
+        padding: 6px 12px;
+        font-size: 1.1rem;
+    }
 }
