@@ -55,6 +55,8 @@
 
 .timeline-card-blue h3 {
     font-size: 2rem;
+    font-family: 'Inter-Bold', sans-serif;
+    text-transform: uppercase;
     margin-bottom: 10px;
     font-weight: 700;
 }
@@ -73,6 +75,8 @@
     font-size: 2rem;
     margin-bottom: 10px;
     font-weight: 700;
+    font-family: 'Inter-Bold', sans-serif;
+    text-transform: uppercase;
 }
 
 .timeline-card-white p {

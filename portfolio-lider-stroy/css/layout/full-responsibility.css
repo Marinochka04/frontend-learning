@@ -41,7 +41,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 .full-resp-content h2 {
@@ -51,12 +51,13 @@
     font-weight: 700;
     line-height: 1.2;
     text-transform: uppercase;
+    font-family: 'Inter-Bold', sans-serif;
 }
 
 .full-resp-content p {
     color: var(--color2);
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.5;
 }
 
