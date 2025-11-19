@@ -134,3 +134,50 @@
         font-size: 1.2rem;
     }
 }
+
+@media (max-width: 768px) {
+    .timeline-section {
+        padding: 15px 0;
+        margin: 20px 0;
+    }
+
+    .timeline-img-wrapper {
+        height: 60vh;
+        padding: 0 20px;
+    }
+
+    .timeline-cards-overlay {
+        bottom: 5px;
+        left: 25px;
+        gap: 5px;
+    }
+
+    .timeline-card {
+        padding: 10px;
+        width: 190px;
+    }
+
+    .timeline-card-blue {
+        height: 120px;
+    }
+
+    .timeline-card-blue h3 {
+        font-size: 1.4rem;
+    }
+
+    .timeline-card-blue p {
+        font-size: 1rem;
+    }
+
+    .timeline-card-white {
+        height: 80px;
+    }
+
+    .timeline-card-white h3 {
+        font-size: 1.4rem;
+    }
+
+    .timeline-card-white p {
+        font-size: 1rem;
+    }
+}
