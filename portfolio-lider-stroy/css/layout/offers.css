@@ -184,3 +184,44 @@
         font-size: 1.1rem;
     }
 }
+
+@media (max-width: 768px) {
+  .offers-container {
+    position: relative;
+    padding-bottom: 90px;
+  }
+
+  .offers-top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    order: 1;
+  }
+
+  .offers-carousel {
+    order: 1;
+    width: 100%;
+  }
+
+  .offers-navigation {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 8px;
+  }
+
+  .offers-text p {
+    display: none;
+  }
+
+  .btn-all-offers {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px;
+    z-index: 40;
+    display: inline-block;
+    margin: 0;
+  }
+}
