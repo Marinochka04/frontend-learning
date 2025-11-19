@@ -41,7 +41,9 @@
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    padding: 0 40px;
+    padding: 30px;
+    background-color: var(--color4);
+    border-radius: 10px;
 }
 
 .full-resp-content h2 {
@@ -109,7 +111,7 @@
     .full-resp-content {
         flex: 0 1 50%;
         min-width: 250px;
-        padding: 0 30px;
+        padding: 20px;
     }
 
     .full-resp-content h2 {
@@ -157,7 +159,7 @@
         flex: none;
         width: 100%;
         min-width: auto;
-        padding: 0 20px;
+        padding: 20px;
         text-align: left;
     }
 
