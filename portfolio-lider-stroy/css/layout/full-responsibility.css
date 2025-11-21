@@ -183,6 +183,11 @@
     .feature-btn {
         padding: 12px 5px;
         font-size: 0.9rem;
-        min-width: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        min-height: 50px;
     }
 }

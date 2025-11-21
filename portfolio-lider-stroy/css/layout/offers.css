@@ -199,7 +199,7 @@
     .offers-top {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 0;
         order: 1;
     }
 
@@ -215,6 +215,10 @@
         gap: 15px;
     }
 
+    .offers-container h2 {
+        margin-bottom: 0;
+    }
+
     .offers-text p {
         display: none;
     }
@@ -223,9 +227,12 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 16px;
+        bottom: 15px;
         z-index: 40;
         display: inline-block;
         margin: 0;
+        white-space: nowrap;
+        padding: 12px 30px;
+        min-width: 200px;
     }
 }
