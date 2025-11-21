@@ -32,6 +32,7 @@
     max-width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
 .full-resp-content {
@@ -106,6 +107,10 @@
     .full-resp-image {
         flex: 0 1 50%;
         min-width: 250px;
+    }
+
+    .full-resp-image-img {
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
     }
 
     .full-resp-content {

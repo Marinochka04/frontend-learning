@@ -17,7 +17,7 @@
     position: relative;
     width: 100%;
     height: 80vh;
-    overflow: hidden;
+    overflow: visible;
     padding: 0 40px;
 }
 
@@ -27,6 +27,7 @@
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
 }
 
 .timeline-cards-overlay {
