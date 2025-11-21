@@ -2,14 +2,12 @@
 
 .contact-section {
     background-color: var(--color3);
-    padding: 0;
     margin: 40px 0 0 0;
     position: relative;
 }
 
 .contact-wrapper {
     display: flex;
-    flex-direction: column;
     position: relative;
 }
 
@@ -25,47 +23,42 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    filter: brightness(0.9);
 }
 
-.contact-text-overlay {
+.contact-overlay {
     position: absolute;
-    top: 50px;
     left: 50px;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    z-index: 20;
-}
+    right: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 420px;
 
-.contact-text-overlay h2 {
-    font-size: 2rem;
-    color: var(--color2);
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-weight: 700;
-    line-height: 1.2;
-    font-family: 'Inter-Bold', sans-serif;
-}
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
 
-.contact-text-overlay p {
-    color: var(--color2);
-    font-size: 1.4rem;
-    margin: 0;
-    line-height: 1.5;
-}
+    padding: 30px 30px;
+    border-radius: 14px;
 
-.contact-buttons-overlay {
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    border-radius: 10px;
+    gap: 15px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.contact-overlay h2 {
+    font-size: 2.2rem;
+    font-family: 'Inter-Bold', sans-serif;
+    color: var(--color4);
+    margin: 0;
+}
+
+
+.contact-overlay p {
+    font-size: 1.3rem;
+    color: var(--color4);
+    margin: 0;
 }
 
 .contact-btn {
@@ -83,8 +76,26 @@
     font-size: 1.2rem;
 }
 
+.contact-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-btn {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 2px solid var(--color4);
+    background-color: var(--color2);
+    color: var(--color4);
+    text-align: center;
+}
+
 .contact-btn:hover {
     background-color: var(--color1);
+    transition: 0.2s;
 }
 
 .contact-footer {
@@ -153,27 +164,24 @@
         height: 70vh;
     }
 
-    .contact-text-overlay {
-        top: 10px;
-        left: 10px;
-        padding: 15px;
-        max-width: 350px;
+    .contact-overlay {
+        left: 20px;
+        right: 20px;
+        top: 20px;
+        transform: none;
+        max-width: none;
+        background: rgba(255, 255, 255, 0.25);
     }
 
-    .contact-text-overlay h2 {
+    .contact-overlay h2 {
         font-size: 1.8rem;
         margin-bottom: 10px;
+        color: var(--color2);
     }
 
-    .contact-text-overlay p {
+    .contact-overlay p {
         font-size: 1.2rem;
-    }
-
-    .contact-buttons-overlay {
-        bottom: 10px;
-        right: 10px;
-        padding: 15px;
-        gap: 10px;
+        color: var(--color2);
     }
 
     .contact-btn {
@@ -209,45 +217,38 @@
     }
 
     .contact-wrapper {
-        display: flex;
         flex-direction: column;
         gap: 20px;
-        padding-top: 20px;
     }
 
-    .contact-text-overlay {
+    .contact-overlay {
         position: static;
-        background-color: var(--color4);
-        padding: 20px;
-        border-radius: 12px;
-        margin: 0 10px;
-        text-align: center;
+        transform: none;
         max-width: none;
+        margin: 0 12px;
+        background: rgba(255, 255, 255, 0.25);
     }
 
-    .contact-text-overlay h2 {
+    .contact-overlay h2 {
         font-size: 1.7rem;
         margin-bottom: 10px;
+        color: var(--color2);
     }
 
-    .contact-text-overlay p {
+    .contact-overlay p {
         font-size: 1.1rem;
         margin: 0;
+        color: var(--color2);
     }
 
     .contact-bg-wrapper {
-        position: static;
-        width: 100%;
         height: auto;
-        margin: 0;
-        overflow: hidden;
-        border-radius: 12px;
+        border-radius: 10px;
     }
 
     .contact-bg-wrapper img {
         width: 100%;
         height: auto;
-        border-radius: 12px;
     }
 
     .contact-buttons-overlay {
