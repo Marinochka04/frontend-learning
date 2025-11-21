@@ -186,42 +186,46 @@
 }
 
 @media (max-width: 768px) {
-  .offers-container {
-    position: relative;
-    padding-bottom: 90px;
-  }
+    .offers-section {
+        padding: 40px 5px;
+    }
 
-  .offers-top {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    order: 1;
-  }
+    .offers-container {
+        gap: 15px;  
+        position: relative;
+        padding-bottom: 110px;
+    }
 
-  .offers-carousel {
-    order: 1;
-    width: 100%;
-  }
+    .offers-top {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        order: 1;
+    }
 
-  .offers-navigation {
-    order: 2;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 8px;
-  }
+    .offers-carousel {
+        order: 1;
+        width: 100%;
+    }
 
-  .offers-text p {
-    display: none;
-  }
+    .offers-navigation {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
 
-  .btn-all-offers {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 16px;
-    z-index: 40;
-    display: inline-block;
-    margin: 0;
-  }
+    .offers-text p {
+        display: none;
+    }
+
+    .btn-all-offers {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 16px;
+        z-index: 40;
+        display: inline-block;
+        margin: 0;
+    }
 }

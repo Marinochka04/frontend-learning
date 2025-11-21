@@ -143,22 +143,22 @@
 
     .timeline-img-wrapper {
         height: 60vh;
-        padding: 0 20px;
+        padding: 0 5px;
     }
 
     .timeline-cards-overlay {
         bottom: 5px;
-        left: 25px;
+        left: 10px;
         gap: 5px;
     }
 
     .timeline-card {
-        padding: 10px;
-        width: 190px;
+        padding: 5px;
+        width: 150px;
     }
 
     .timeline-card-blue {
-        height: 120px;
+        height: 130px;
     }
 
     .timeline-card-blue h3 {
@@ -170,7 +170,7 @@
     }
 
     .timeline-card-white {
-        height: 80px;
+        height: 90px;
     }
 
     .timeline-card-white h3 {

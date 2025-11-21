@@ -148,7 +148,7 @@
     .full-resp-top {
         flex-direction: column;
         gap: 20px;
-        padding: 0 20px;
+        padding: 0 5px;
     }
 
     .full-resp-image {
@@ -169,20 +169,20 @@
     }
 
     .full-resp-content p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .full-resp-features {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        margin-top: 10px;
-        padding: 0 20px;
+        gap: 5px;
+        margin-top: 5px;
+        padding: 0 5px;
     }
 
     .feature-btn {
-        padding: 12px 20px;
-        font-size: 1rem;
+        padding: 12px 5px;
+        font-size: 0.9rem;
         min-width: none;
     }
 }
