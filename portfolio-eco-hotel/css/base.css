@@ -3,7 +3,13 @@
   --color2: #ebeada;
   --color3: #d1c3ab;
   --color4: #bcbb90;
-  --color5: #8b9371;
-  --color6: #636951;
+  --color5: #8b9b58;
+  --color6: #5d6642;
   --color7: #313427;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

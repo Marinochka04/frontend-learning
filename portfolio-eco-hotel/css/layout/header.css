@@ -1,0 +1,55 @@
+@import url('../base.css');
+
+.header {
+    background-color: var(--color2);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color6);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-list a {
+    color: var(--color6);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-list a:hover {
+    color: var(--color5);
+}
+
+.header-btn {
+    padding: 10px 20px;
+    color: var(--color6);
+    background-color: var(--color2);
+    border: 3px solid var(--color6);
+    border-radius: 50px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header-btn:hover {
+    background-color: var(--color1);
+}
