@@ -92,3 +92,49 @@
 .amenity-card-btn:hover {
     background-color: var(--color5);
 }
+
+@media (max-width: 768px) {
+    .amenities-section {
+        padding: 30px 20px;
+    }
+
+    .amenities-container {
+        gap: 20px;
+    }
+
+    .amenities-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .amenities-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .amenity-card img {
+        height: 200px;
+    }
+
+    .amenity-card h3 {
+        font-size: 1.2rem;
+        margin: 10px 10px 5px 10px;
+    }
+
+    .amenity-card p {
+        font-size: 1rem;
+        margin: 0 10px 10px 10px;
+    }
+
+    .price {
+        padding: 8px 10px;
+    }
+
+    .price span {
+        font-size: 1.2rem;
+    }
+
+    .amenity-card-btn {
+        width: 25px;
+        height: 25px;
+    }
+}
