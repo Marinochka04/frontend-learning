@@ -12,7 +12,7 @@
     gap: 40px;
 }
 
-.section-title {
+.amenities-container h2 {
     font-size: 2rem;
     color: var(--color5);
     text-align: center;
