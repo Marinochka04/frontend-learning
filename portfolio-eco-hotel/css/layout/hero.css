@@ -128,3 +128,78 @@
 .hero-btn:hover {
     background-color: var(--color2);
 }
+
+@media (max-width: 1100px) {
+    .hero-container {
+        height: 80vh;
+        padding: 20px 20px;
+    }
+
+    .hero-content p {
+        font-size: 1.6rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-card {
+        max-width: 260px;
+        padding: 8px;
+        gap: 10px;
+    }
+
+    .hero-card-img-wrapper {
+        height: 130px;
+    }
+
+    .hero-card p {
+        font-size: 1.1rem;
+    }
+
+    .hero-btn {
+        font-size: 1.4rem;
+        padding: 15px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 10px 20px;
+    }
+
+    .hero-container {
+        height: 60vh;
+        padding: 40px 20px;
+        border-radius: 8px;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .hero-content p {
+        font-size: 1.4rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.4rem;
+        line-height: 1.4;
+    }
+
+    .hero-card {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 90px;
+        max-width: 90%;
+    }
+
+    .hero-btn {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        font-size: 1.3rem;
+        padding: 14px 22px;
+    }
+}
