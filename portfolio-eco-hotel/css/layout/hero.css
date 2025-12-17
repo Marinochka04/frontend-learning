@@ -189,10 +189,7 @@
     }
 
     .hero-card {
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 90px;
-        max-width: 90%;
+        display: none;
     }
 
     .hero-btn {
@@ -201,5 +198,6 @@
         bottom: 20px;
         font-size: 1.3rem;
         padding: 14px 22px;
+        text-align: center;
     }
 }
