@@ -46,13 +46,13 @@
 
 .amenity-card h3 {
     font-size: 1.2rem;
-    color: var(--color7);
+    color: var(--color6);
     margin: 15px 15px 5px 15px;
     font-weight: 600;
 }
 
 .amenity-card p {
-    color: var(--color7);
+    color: var(--color6);
     font-size: 1.2rem;
     margin: 0 15px 15px 15px;
     line-height: 1.4;
@@ -70,8 +70,9 @@
 }
 
 .price span {
-    font-size: 1.2rem;
-    color: var(--color7);
+    font-size: 1.6rem;
+    color: var(--color2);
+    font-weight: 800;
 }
 
 .amenity-card-btn {
